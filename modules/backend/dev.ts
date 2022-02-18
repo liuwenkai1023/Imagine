@@ -7,7 +7,7 @@ import config from '../webpack.config'
 const port = 9999
 
 const compiler = webpack(config)
-const server = new WebpackDevServer(compiler, {
+const server = new WebpackDevServer(compiler as any, {
   publicPath: '/dist',
   hot: true,
   port,

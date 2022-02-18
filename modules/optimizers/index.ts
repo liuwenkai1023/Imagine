@@ -51,6 +51,9 @@ export const pngquant: IOptimizeMethod = (
     input,
     '-o',
     output,
+    '--nofs',
+    '--speed',
+    '1'
   ]
 
   log.info('spawn', bins.pngquant, spawnArgs)

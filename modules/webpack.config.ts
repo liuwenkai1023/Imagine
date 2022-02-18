@@ -88,9 +88,9 @@ const config: Configuration = {
 
   target: 'electron-renderer',
 
-  devServer: {
-
-  },
 }
+
+config['devServer'] = {};
+
 
 export default config
